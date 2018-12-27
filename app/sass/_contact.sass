@@ -1,0 +1,62 @@
+.contact
+  background: url("../img/contact-bg.png") center no-repeat
+  padding-bottom: 75px
+  &__content
+    display: flex
+    justify-content: space-between
+  &__menu-list--item:hover
+    background-color: #82c8bd
+    
+
+
+
+.contacts
+  text-align-last: left
+  flex-basis: 48%
+  &__title
+    color: #fff
+    font: 400 30px "Lato"
+    margin-bottom: 10px
+    
+    
+    
+    
+    
+.address
+  margin-bottom: 70px
+  &__lead
+    color: #c0dfda
+    font: 700 20px "Lato"
+  &__text
+    color: #fff
+    font: 400 16px "Lato"
+    line-height: 21px
+    
+.contact-list
+  
+  &__item
+    color: #fff
+    font: 400 16px "Lato"
+    
+    &-text
+      color: #d0efea
+      width: 60px
+      display: inline-block
+      
+    &-underline
+      text-decoration: underline
+    
+@media only screen and (max-width: 768px)
+  .contact
+    &__content
+      flex-direction: column
+
+  .contacts
+    overflow: hidden
+
+  .contact-list
+    float: right
+
+  .address
+    display: inline-block
+    margin-bottom: 20px

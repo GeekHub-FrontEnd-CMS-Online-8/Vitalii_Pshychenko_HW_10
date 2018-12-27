@@ -1,0 +1,77 @@
+.services-list
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+  flex-wrap: wrap
+
+.services-item
+  padding: 40px 20px
+  background-color: rgba(200, 83, 90, 0.8)
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  flex-basis: 24%
+  &__content
+    width: 135px
+    height: 135px
+    background-color: #fff
+    border-radius: 50%
+    position: relative
+
+    &:after
+      content: url(..)
+      display: block
+      position: absolute
+      left: 5px
+      top: 5px
+      right: 5px
+      bottom: 5px
+      border: 5px solid rgba(200, 83, 90, 0.8)
+      border-radius: 50%
+  &__title
+    color: #fff
+    text-transform: uppercase
+    font: 300 30px "Lato"
+    line-height: 58px
+  &__text
+    color: #fefefe
+    font: 400 14px "Lato"
+    line-height: 20px
+
+.lightball
+  background: #fff url("../img/lightball.png") center no-repeat
+
+.wand
+  background: #fff url("../img/wand.png") center no-repeat
+
+.giars
+  background: #fff url("../img/giars.png") center no-repeat
+
+.rocket
+  background: #fff url("../img/rocket.png") center no-repeat
+
+@media only screen and (max-width: 1100px)
+  .services-list
+    justify-content: space-around
+
+  .services-item
+    flex-basis: 34%
+    margin-bottom: 20px
+
+@media only screen and (max-width: 770px)
+  .services-list
+    justify-content: center
+
+  .services-item
+    flex-basis: 60%
+
+    &__title
+      font: 300 25px "Lato"
+      line-height: 48px
+    &__text
+      color: #fefefe
+      font: 400 12px "Lato"
+      line-height: 17px
+
+

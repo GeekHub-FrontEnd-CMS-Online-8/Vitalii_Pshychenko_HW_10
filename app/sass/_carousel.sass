@@ -1,0 +1,122 @@
+.carousel
+  position: absolute
+  left: 0%
+  top: 50%
+  transform: translateY(-50%)
+  &__item
+    background-color: rgba(255, 255, 255, 0.3)
+    max-width: 840px
+    width: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    &-first
+      color: #74c7d5
+      font: 300 60px "Lato"
+      text-align: right
+      line-height: 55px
+      padding: 30px 15px 0 0
+      flex-basis: 47%
+    &-second
+      color: #74c7d5
+      font: 400 138px "Lato-Black"
+
+.owl-prev
+  background-image: url("../img/arrow_left.png") !important
+  height: 56px
+  width: 34px
+  position: absolute
+  left: 3%
+  top: 50%
+  transform: translateY(-50%)
+  outline: none
+
+.owl-next
+  background-image: url("../img/arrow_right.png") !important
+  height: 56px
+  width: 34px
+  position: absolute
+  right: 3%
+  top: 50%
+  transform: translateY(-50%)
+  outline: none
+
+.owl-dots
+  position: absolute
+  display: flex
+  bottom: -100%
+  left: 50%
+  transform: translateX(-50%)
+
+.owl-dot
+  width: 20px
+  height: 20px
+  background-color: #fff !important
+  opacity: 0.5
+  display: block
+  border-radius: 50%
+  margin-right: 5px
+  border: transparent
+  outline: none
+  &:focus,
+  &:active
+    background-color: #74c7d5 !important
+
+@media only screen and (max-width: 992px)
+  .carousel
+    &__item
+      width: 98%
+
+      &-first
+        color: #74c7d5
+        font: 300 55px "Lato"
+        line-height: 45px
+        padding-top: 30px
+        flex-basis: 43%
+
+      &-second
+        color: #74c7d5
+        font: 400 120px "Lato-Black"
+  .owl-dots
+    bottom: -200%
+
+
+@media only screen and (max-width: 820px)
+  .carousel
+    &__item
+
+      &-first
+        font: 300 45px "Lato"
+        line-height: 38px
+        padding-top: 25px
+
+      &-second
+        font: 400 100px "Lato-Black"
+
+@media only screen and (max-width: 720px)
+  .carousel
+    &__item
+      width: 90%
+      flex-basis: 35%
+
+      &-first
+        font: 300 30px "Lato"
+        line-height: 30px
+        padding-top: 20px
+
+      &-second
+        font: 400 80px "Lato-Black"
+
+@media only screen and (max-width: 530px)
+  .carousel
+    &__item
+      width: 85%
+      flex-basis: 35%
+
+      &-first
+        font: 300 23px "Lato"
+        line-height: 25px
+        padding-top: 15px
+
+      &-second
+        font: 400 65px "Lato-Black"
